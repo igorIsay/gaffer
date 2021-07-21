@@ -77,15 +77,8 @@ h1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 15px;
+  grid-row-gap: 1em;
 }
-
-/*
-@media (max-width: 780px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-*/
 
 @media (max-width: 980px) {
   h1 {
@@ -100,5 +93,12 @@ h1 {
   .equipment__category__list {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 25px;
+    grid-row-gap: 1em;
   }
+
+  .equipment__category__list__item__name {
+    font-size: 34px;
+    margin-top: 15px;
+  }
+
 }
