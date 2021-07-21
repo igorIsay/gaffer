@@ -1,0 +1,44 @@
+<div id="canvas">
+  <div id="equipment">
+    <div class="equipment__category">
+      <div class="equipment__category__title">
+        <h1>LED-Single Point Source & optical mounts</h1>
+      </div>
+      <div class="equipment__category__list">
+        {{#each led}}
+          <div class="equipment__category__list__item">
+            <img class="equipment__category__list__item__img" src="images/equipment/{{this.id}}.webp">
+            <div class="equipment__category__list__item__name">{{this.title}} (x{{this.quantity}})</div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="equipment__category">
+      <div class="equipment__category__title">
+        <h1>Smart Bulbs</h1>
+      </div>
+      <div class="equipment__category__list">
+        {{#each bulbs}}
+          <div class="equipment__category__list__item">
+            <img class="equipment__category__list__item__img" src="images/equipment/{{this.id}}.webp">
+            <div class="equipment__category__list__item__name">{{this.title}} (x{{this.quantity}})</div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="equipment__category">
+      <div class="equipment__category__title">
+        <h1>LED Tubes</h1>
+      </div>
+      <div class="equipment__category__list">
+        {{#each tubes}}
+          <div class="equipment__category__list__item">
+            <img class="equipment__category__list__item__img" src="images/equipment/{{this.id}}.webp">
+            <div class="equipment__category__list__item__name">{{this.title}} (x{{this.quantity}})</div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+  </div>
+</div>

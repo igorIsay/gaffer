@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Light.woff2') format('woff2'),
+  url('../fonts/SourceSansPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-image: none;
+  background-position: top left;
+  background-size: auto;
+  background-attachment: scroll;
+  background-repeat: repeat;
+  background-color: #f0f4f4;
+  color: #263333;
+}
+
+h1 {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.3em;
+  font-size: 1em;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+#canvas {
+  max-width: 1066px;
+  margin: 0 auto;
+  padding: 20px 88px 0;
+}
+
+.equipment__category__title {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.3em;
+  font-size: 3em;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+  /*
+  font-family: "Source Sans Pro";
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1.3em;
+  padding: 17px 0 17px 0;
+  */
+}
+
+.equipment__category__list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.equipment__category__list__item__img {
+  width: 100%;
+}
+
+.equipment__category__list__item__name {
+  font-family: Source Sans Pro;
+  font-weight: 300;
+  font-size: 13px;
+  font-style: normal;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.equipment__category__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 15px;
+}
+
+/*
+@media (max-width: 780px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+*/
+
+@media (max-width: 980px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  #canvas {
+    margin: 0;
+    padding: 0 40px;
+  }
+
+  .equipment__category__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 25px;
+  }
+}
