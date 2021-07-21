@@ -6,10 +6,10 @@
       </div>
       <div class="equipment__category__list">
         {{#each led}}
-          <div class="equipment__category__list__item">
+          <a class="equipment__category__list__item" href="/{{this.id}}">
             <img class="equipment__category__list__item__img" src="images/equipment/{{this.id}}.webp">
             <div class="equipment__category__list__item__name">{{this.title}} (x{{this.quantity}})</div>
-          </div>
+          </a>
         {{/each}}
       </div>
     </div>
@@ -19,10 +19,10 @@
       </div>
       <div class="equipment__category__list">
         {{#each bulbs}}
-          <div class="equipment__category__list__item">
+          <a class="equipment__category__list__item" href="/{{this.id}}">
             <img class="equipment__category__list__item__img" src="images/equipment/{{this.id}}.webp">
             <div class="equipment__category__list__item__name">{{this.title}} (x{{this.quantity}})</div>
-          </div>
+          </a>
         {{/each}}
       </div>
     </div>
@@ -32,10 +32,10 @@
       </div>
       <div class="equipment__category__list">
         {{#each tubes}}
-          <div class="equipment__category__list__item">
+          <a class="equipment__category__list__item" href="/{{this.id}}">
             <img class="equipment__category__list__item__img" src="images/equipment/{{this.id}}.webp">
             <div class="equipment__category__list__item__name">{{this.title}} (x{{this.quantity}})</div>
-          </div>
+          </a>
         {{/each}}
       </div>
     </div>

@@ -1,0 +1,20 @@
+<div id="canvas">
+  <div class="item_grid">
+    <div class="item_grid__title"><h1>{{item.title}}</h1></div>
+    <div class="item_grid__photo">
+      <img src="/images/equipment/{{item.id}}_large.webp">
+    </div>
+    <div class="item_grid__description">
+      <h3>₴{{item.price}} Per Day</h3>
+      <p>{{item.description}}</p>
+      {{#if item.accessories.length}}
+        <h2>Specs</h2>
+        <ul>
+          {{#each item.accessories}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      {{/if}}
+    </div>
+  </div>
+</div>
